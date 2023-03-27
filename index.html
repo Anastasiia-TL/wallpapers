@@ -1,138 +1,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<style>
-		body {
-			background-color: black;
-		}
-		
-		h2 {
-			color: #ffffcc;
-			font-size: 35px;
-			font-family: 'Arial', sans-serif;
-			font-weight: normal;
-			padding: 20px 0px 0px 30px;
-			margin: 0px;
-		}
-
-		nav {
-			text-align: center;
-		}
-
-		.menu {
-			color: #ffff11;
-			background: padding-box linear-gradient(to top left, crimson, skyblue);
-			text-decoration: none;
-			font-family: sans-serif;
-			font-size: 25px;
-			padding: 5px 15px 5px 15px;
-		}
-
-		.menu:hover {
-			color: white;
-		}
-		
-		.container {
-			width: 80%;
-			text-align: center;
-			display: block;
-		    margin-left: auto;
-		    margin-right: auto;
-		}
-
-		 .sakura {
-		 	background-color: #330000;
-		 	background: linear-gradient(to top, #990000, #330000);
-		 }
-
-		 .architecture {
-		 	background-color: #002222;
-		 	background: linear-gradient(to top, #006666, #002222);
-		 }
-
-		 .space {
-		 	background-color: #220022;
-		 	background: linear-gradient(to top, #660066, #220022);
-		 }
-
-		 .mountains {
-		 	background-color: #000033;
-		 	background: linear-gradient(to top, #222277, #000033);
-		 }
-
-		 .forest {
-		 	background-color: #003300;
-		 	background: linear-gradient(to top, #009900, #003300);
-		 }
-
-		.picture {
-			/* чтобы отображалось в строчку */
-			display: inline-block;
-
-			/* задаём ширину приблизительно треть экрана */
-			width: 28%;
-
-			/* внутренний отступ внутри коробочки */
-			padding: 20px;
-
-			box-sizing: border-box;
-
-			/* задаём скорость анимации */ 
-			transition: all 0.3s;
-			}
-		
-		.picture:hover{
-			transform: scale(1.1, 1.1);
-			/* opacity: 0.4; */
-		}
-
-		img {
-			/* задаём ширину, иначе картинки будут большие */
-			width: 100%;
-			border-radius: 0 20px 0 20px;
-		}
-
-		.mobile{
-			display: none;
-		}
-
-		/* Стили, которые меняются на мобиле */
-		@media (max-width: 1080px) {
-			.container {
-				width: 90%;
-			}
-
-			.picture {
-				width: 30%;
-			}
-		}
-
-		@media (max-width: 500px) {
-			.menu {
-				display: block;
-			}
-
-			.picture {
-				width: 100%;
-			}
-
-			.picture:hover {
-				transform: none;
-				text-align: center;
-			}
-
-			body div:first-child a {
-				display: block;
-			}
-
-			.desktop {
-				display: none;
-			}
-
-			.mobile{
-			display: block;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<nav style="padding: 20px 0">
@@ -143,368 +11,509 @@
 		<a class="menu" href="#forest">Лес</a>
 	</nav>
 
-	<!-- Сакура -->
-	<div class="container sakura">
-		<h2 id="sakura">Сакура</h2>
-		<div class="picture desktop">
-			<a href="img/sakura/s1.png" target="_blank">
-				<img src="img/sakura/s1.png">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/sakura/mob_s1.jpg" target="_blank">
-				<img src="img/sakura/mob_s1.jpg">
-			</a>
-		</div>
+	<main>
+		<!-- Сакура -->
+		<section class="sakura">
+			<h2 id="sakura">Сакура</h2>
+			<!-- 1 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s1.png" target="_blank">
+						<img src="img/sakura/s1.png">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/sakura/mob_s1.jpg" target="_blank">
+					<img src="img/sakura/mob_s1.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/sakura/s2.jpg" target="_blank">
-				<img src="img/sakura/s2.jpg">
-			</a>
-		</div>
+			<!-- 2 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s2.jpg" target="_blank">
+						<img src="img/sakura/s2.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/sakura/s3.jpg" target="_blank">
-				<img src="img/sakura/s3.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/sakura/mob_s3.jpg" target="_blank">
-				<img src="img/sakura/mob_s3.jpg">
-			</a>
-		</div>
+			<!-- 3 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s3.jpg" target="_blank">
+						<img src="img/sakura/s3.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/sakura/mob_s3.jpg" target="_blank">
+					<img src="img/sakura/mob_s3.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/sakura/s4.jpg" target="_blank">
-				<img src="img/sakura/s4.jpg">
-			</a>
-		</div>
+			<!-- 4 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s4.jpg" target="_blank">
+						<img src="img/sakura/s4.jpg">
+					</a>
+				</div>
+			</div>
+			
+			<!-- 5 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s5.jpeg" target="_blank">
+						<img src="img/sakura/s5.jpeg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/sakura/mob_s5.jpg" target="_blank">
+					<img src="img/sakura/mob_s5.jpg">
+				</a>
+			</div>
+
+			<!-- 6 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s6.jpg" target="_blank">
+						<img src="img/sakura/s6.jpg">
+					</a>
+				</div>
+			</div>
+
+			<!-- 7 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s7.png" target="_blank">
+						<img src="img/sakura/s7.png">
+					</a>
+				</div>
+			</div>
+
+			<!-- 8 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s8.jpg" target="_blank">
+						<img src="img/sakura/s8.jpg">
+					</a>
+				</div>
+			</div>
+
+			<!-- 9 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/sakura/s9.jpg" target="_blank">
+						<img src="img/sakura/s9.jpg">
+					</a>
+				</div>
+			</div>
+		</section>
 		
-		<div class="picture desktop">
-			<a href="img/sakura/s5.jpeg" target="_blank">
-				<img src="img/sakura/s5.jpeg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/sakura/mob_s5.jpg" target="_blank">
-				<img src="img/sakura/mob_s5.jpg">
-			</a>
-		</div>
+		<!-- Архитектура -->
+		<section class="architecture">
+			<h2 id="architecture">Архитектура</h2>
 
-		<div class="picture desktop">
-			<a href="img/sakura/s6.jpg" target="_blank">
-				<img src="img/sakura/s6.jpg">
-			</a>
-		</div>
+			<!-- 1 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a1.jpg" target="_blank">
+						<img src="img/architecture/a1.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/architecture/mob_a1.jpg" target="_blank">
+					<img src="img/architecture/mob_a1.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/sakura/s7.png" target="_blank">
-				<img src="img/sakura/s7.png">
-			</a>
-		</div>
+			<!-- 2 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a2.jpg" target="_blank">
+						<img src="img/architecture/a2.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/sakura/s8.jpg" target="_blank">
-				<img src="img/sakura/s8.jpg">
-			</a>
-		</div>
+			<!-- 3 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a3.jpg" target="_blank">
+						<img src="img/architecture/a3.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/architecture/mob_a3.jpg" target="_blank">
+					<img src="img/architecture/mob_a3.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/sakura/s9.jpg" target="_blank">
-				<img src="img/sakura/s9.jpg">
-			</a>
-		</div>
-	</div>
-	
-	<!-- Архитектура -->
-	<div class="container architecture">
-		<h2 id="architecture">Архитектура</h2>
-		<div class="picture desktop">
-			<a href="img/architecture/a1.jpg" target="_blank">
-				<img src="img/architecture/a1.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/architecture/mob_a1.jpg" target="_blank">
-				<img src="img/architecture/mob_a1.jpg">
-			</a>
-		</div>
+			<!-- 4 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a4.jpg" target="_blank">
+						<img src="img/architecture/a4.jpg">
+					</a>
+				</div>
+			</div>
+			
+			<!-- 5 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a5.jpg" target="_blank">
+						<img src="img/architecture/a5.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/architecture/mob_a5.jpg" target="_blank">
+					<img src="img/architecture/mob_a5.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/architecture/a2.jpg" target="_blank">
-				<img src="img/architecture/a2.jpg">
-			</a>
-		</div>
+			<!-- 6 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a6.jpg" target="_blank">
+						<img src="img/architecture/a6.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/architecture/a3.jpg" target="_blank">
-				<img src="img/architecture/a3.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/architecture/mob_a3.jpg" target="_blank">
-				<img src="img/architecture/mob_a3.jpg">
-			</a>
-		</div>
+			<!-- 7 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a7.jpg" target="_blank">
+						<img src="img/architecture/a7.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/architecture/a4.jpg" target="_blank">
-				<img src="img/architecture/a4.jpg">
-			</a>
-		</div>
+			<!-- 8 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a8.jpg" target="_blank">
+						<img src="img/architecture/a8.jpg">
+					</a>
+				</div>
+			</div>
+
+			<!-- 9 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/architecture/a9.jpg" target="_blank">
+						<img src="img/architecture/a9.jpg">
+					</a>
+				</div>
+			</div>
+		</section>
 		
-		<div class="picture desktop">
-			<a href="img/architecture/a5.jpg" target="_blank">
-				<img src="img/architecture/a5.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/architecture/mob_a5.jpg" target="_blank">
-				<img src="img/architecture/mob_a5.jpg">
-			</a>
-		</div>
+		<!-- Космос -->
+		<section class="space">
+			<h2 id="space">Космос</h2>
+			<!-- 1 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c1.jpg" target="_blank">
+						<img src="img/space/c1.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/space/mob_c1.jpg" target="_blank">
+					<img src="img/space/mob_c1.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/architecture/a6.jpg" target="_blank">
-				<img src="img/architecture/a6.jpg">
-			</a>
-		</div>
+			<!-- 2 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c2.jpg" target="_blank">
+						<img src="img/space/c2.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/architecture/a7.jpg" target="_blank">
-				<img src="img/architecture/a7.jpg">
-			</a>
-		</div>
+			<!-- 3 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c3.jpg" target="_blank">
+						<img src="img/space/c3.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/space/mob_c3.jpg" target="_blank">
+					<img src="img/space/mob_c3.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/architecture/a8.jpg" target="_blank">
-				<img src="img/architecture/a8.jpg">
-			</a>
-		</div>
+			<!-- 4 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c4.jpg" target="_blank">
+						<img src="img/space/c4.jpg">
+					</a>
+				</div>
+			</div>
+			
+			<!-- 5 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c5.jpg" target="_blank">
+						<img src="img/space/c5.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/space/mob_c5.jpg" target="_blank">
+					<img src="img/space/mob_c5.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/architecture/a9.jpg" target="_blank">
-				<img src="img/architecture/a9.jpg">
-			</a>
-		</div>
-	</div>
-	
-	<!-- Космос -->
-	<div class="container space">
-		<h2 id="space">Космос</h2>
-		<div class="picture desktop">
-			<a href="img/space/c1.jpg" target="_blank">
-				<img src="img/space/c1.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/space/mob_c1.jpg" target="_blank">
-				<img src="img/space/mob_c1.jpg">
-			</a>
-		</div>
+			<!-- 6 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c6.jpg" target="_blank">
+						<img src="img/space/c6.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/space/c2.jpg" target="_blank">
-				<img src="img/space/c2.jpg">
-			</a>
-		</div>
+			<!-- 7 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c7.jpg" target="_blank">
+						<img src="img/space/c7.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/space/c3.jpg" target="_blank">
-				<img src="img/space/c3.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/space/mob_c3.jpg" target="_blank">
-				<img src="img/space/mob_c3.jpg">
-			</a>
-		</div>
+			<!-- 8 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c8.jpg" target="_blank">
+						<img src="img/space/c8.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/space/c4.jpg" target="_blank">
-				<img src="img/space/c4.jpg">
-			</a>
-		</div>
+			<!-- 9 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/space/c9.jpg" target="_blank">
+						<img src="img/space/c9.jpg">
+					</a>
+				</div>
+			</div>
+		</section>
 		
-		<div class="picture desktop">
-			<a href="img/space/c5.jpg" target="_blank">
-				<img src="img/space/c5.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/space/mob_c5.jpg" target="_blank">
-				<img src="img/space/mob_c5.jpg">
-			</a>
-		</div>
+		<!-- Горы -->
+		<section class="mountains">
+			<h2 id="mountains">Горы</h2>
+			<!-- 1 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m1.jpg" target="_blank">
+						<img src="img/mountains/m1.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/mountains/mob_m1.jpg" target="_blank">
+					<img src="img/mountains/mob_m1.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/space/c6.jpg" target="_blank">
-				<img src="img/space/c6.jpg">
-			</a>
-		</div>
+			<!-- 2 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m2.jpg" target="_blank">
+						<img src="img/mountains/m2.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/space/c7.jpg" target="_blank">
-				<img src="img/space/c7.jpg">
-			</a>
-		</div>
+			<!-- 3 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m3.jpeg" target="_blank">
+						<img src="img/mountains/m3.jpeg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/mountains/mob_m3.jpg" target="_blank">
+					<img src="img/mountains/mob_m3.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/space/c8.jpg" target="_blank">
-				<img src="img/space/c8.jpg">
-			</a>
-		</div>
+			<!-- 4 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m4.jpg" target="_blank">
+						<img src="img/mountains/m4.jpg">
+					</a>
+				</div>
+			</div>
+			
+			<!-- 5 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m5.jpg" target="_blank">
+						<img src="img/mountains/m5.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/mountains/mob_m5.jpg" target="_blank">
+					<img src="img/mountains/mob_m5.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/space/c9.jpg" target="_blank">
-				<img src="img/space/c9.jpg">
-			</a>
-		</div>
-	</div>
-	
-	<!-- Горы -->
-	<div class="container mountains">
-		<h2 id="mountains">Горы</h2>
-		<div class="picture desktop">
-			<a href="img/mountains/m1.jpg" target="_blank">
-				<img src="img/mountains/m1.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/mountains/mob_m1.jpg" target="_blank">
-				<img src="img/mountains/mob_m1.jpg">
-			</a>
-		</div>
+			<!-- 6 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m6.jpg" target="_blank">
+						<img src="img/mountains/m6.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/mountains/m2.jpg" target="_blank">
-				<img src="img/mountains/m2.jpg">
-			</a>
-		</div>
+			<!-- 7 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m7.jpg" target="_blank">
+						<img src="img/mountains/m7.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/mountains/m3.jpeg" target="_blank">
-				<img src="img/mountains/m3.jpeg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/mountains/mob_m3.jpg" target="_blank">
-				<img src="img/mountains/mob_m3.jpg">
-			</a>
-		</div>
+			<!-- 8 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m8.jpg" target="_blank">
+						<img src="img/mountains/m8.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/mountains/m4.jpg" target="_blank">
-				<img src="img/mountains/m4.jpg">
-			</a>
-		</div>
-		
-		<div class="picture desktop">
-			<a href="img/mountains/m5.jpg" target="_blank">
-				<img src="img/mountains/m5.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/mountains/mob_m5.jpg" target="_blank">
-				<img src="img/mountains/mob_m5.jpg">
-			</a>
-		</div>
+			<!-- 1 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/mountains/m9.jpg" target="_blank">
+						<img src="img/mountains/m9.jpg">
+					</a>
+				</div>
+			</div>
+		</section>
 
-		<div class="picture desktop">
-			<a href="img/mountains/m6.jpg" target="_blank">
-				<img src="img/mountains/m6.jpg">
-			</a>
-		</div>
+		<!-- Лес -->
+		<section class="forest">
+			<h2 id="forest">Лес</h2>
+			<!-- 1 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f1.jpg" target="_blank">
+						<img src="img/forest/f1.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/forest/mob_f1.jpg" target="_blank">
+					<img src="img/forest/mob_f1.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/mountains/m7.jpg" target="_blank">
-				<img src="img/mountains/m7.jpg">
-			</a>
-		</div>
+			<!-- 2 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f2.jpg" target="_blank">
+						<img src="img/forest/f2.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/mountains/m8.jpg" target="_blank">
-				<img src="img/mountains/m8.jpg">
-			</a>
-		</div>
+			<!-- 3 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f3.jpg" target="_blank">
+						<img src="img/forest/f3.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/forest/mob_f3.jpg" target="_blank">
+					<img src="img/forest/mob_f3.jpg">
+				</a>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/mountains/m9.jpg" target="_blank">
-				<img src="img/mountains/m9.jpg">
-			</a>
-		</div>
-	</div>
+			<!-- 4 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f4.jpg" target="_blank">
+						<img src="img/forest/f4.jpg">
+					</a>
+				</div>
+			</div>
+			
+			<!-- 5 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f5.jpg" target="_blank">
+						<img src="img/forest/f5.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="picture mobile">
+				<a href="img/forest/mob_f5.png" target="_blank">
+					<img src="img/forest/mob_f5.png">
+				</a>
+			</div>
 
-	<!-- Лес -->
-	<div class="container forest">
-		<h2 id="forest">Лес</h2>
-		<div class="picture desktop">
-			<a href="img/forest/f1.jpg" target="_blank">
-				<img src="img/forest/f1.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/forest/mob_f1.jpg" target="_blank">
-				<img src="img/forest/mob_f1.jpg">
-			</a>
-		</div>
+			<!-- 6 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f6.jpg" target="_blank">
+						<img src="img/forest/f6.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/forest/f2.jpg" target="_blank">
-				<img src="img/forest/f2.jpg">
-			</a>
-		</div>
+			<!-- 7 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f7.jpg" target="_blank">
+						<img src="img/forest/f7.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/forest/f3.jpg" target="_blank">
-				<img src="img/forest/f3.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/forest/mob_f3.jpg" target="_blank">
-				<img src="img/forest/mob_f3.jpg">
-			</a>
-		</div>
+			<!-- 8 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f8.jpg" target="_blank">
+						<img src="img/forest/f8.jpg">
+					</a>
+				</div>
+			</div>
 
-		<div class="picture desktop">
-			<a href="img/forest/f4.jpg" target="_blank">
-				<img src="img/forest/f4.jpg">
-			</a>
-		</div>
-		
-		<div class="picture desktop">
-			<a href="img/forest/f5.jpg" target="_blank">
-				<img src="img/forest/f5.jpg">
-			</a>
-		</div>
-		<div class="picture mobile">
-			<a href="img/forest/mob_f5.png" target="_blank">
-				<img src="img/forest/mob_f5.png">
-			</a>
-		</div>
-
-		<div class="picture desktop">
-			<a href="img/forest/f6.jpg" target="_blank">
-				<img src="img/forest/f6.jpg">
-			</a>
-		</div>
-
-		<div class="picture desktop">
-			<a href="img/forest/f7.jpg" target="_blank">
-				<img src="img/forest/f7.jpg">
-			</a>
-		</div>
-
-		<div class="picture desktop">
-			<a href="img/forest/f8.jpg" target="_blank">
-				<img src="img/forest/f8.jpg">
-			</a>
-		</div>
-
-		<div class="picture desktop">
-			<a href="img/forest/f9.jpg" target="_blank">
-				<img src="img/forest/f9.jpg">
-			</a>
-		</div>
-	</div>
+			<!-- 9 -->
+			<div class="picture desktop">
+				<div class="shadowing desktop">
+					<a href="img/forest/f9.jpg" target="_blank">
+						<img src="img/forest/f9.jpg">
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		2023 г.
+	</footer>
 </body>

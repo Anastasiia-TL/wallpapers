@@ -1,0 +1,173 @@
+body {
+	background-color: black;
+}
+
+border-style {
+	background-color: black;
+}
+		
+h2 {
+	border-bottom: solid 1px #ffffcc; 
+	color: #ffffcc;
+	text-align: left;
+	font-size: 35px;
+	font-family: 'Arial Narrow', 'Arial', sans-serif;
+	font-weight: normal;
+	padding: 20px 20px 10px 30px;
+	margin: 0px;
+}
+
+nav {
+	text-align: center;
+}
+
+main {
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	color: #dddd77;
+	width: 80%;
+	text-align: right;
+	padding: 20px 10px;
+	font-family: 'Arial', sans-serif;
+}
+
+.menu {
+	color: #ffff11;
+	background: padding-box linear-gradient(to top left, crimson, skyblue);
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 25px;
+	padding: 5px 15px 5px 15px;
+}
+
+.menu:hover {
+	color: white;
+}
+
+.sakura {
+	background-color: #330000;
+	background: linear-gradient(to top, #990000, #330000);
+}
+
+.architecture {
+	background-color: #002222;
+	background: linear-gradient(to top, #006666, #002222);
+}
+
+.space {
+	background-color: #220022;
+	background: linear-gradient(to top, #660066, #220022);
+}
+
+.mountains {
+	background-color: #000033;
+	background: linear-gradient(to top, #222277, #000033);
+}
+
+.forest {
+	background-color: #003300;
+	background: linear-gradient(to top, #009900, #003300);
+}
+
+.shadowing {
+	display: inline-block;
+
+	/* задаём ширину приблизительно треть экрана */
+	width: 100%;
+
+	border-radius: 0 20px 0 20px;
+	box-sizing: border-box;
+	transition: all 0.3s;
+	background-color: #dddd77;
+	opacity: 1;
+}
+
+.shadowing:hover {
+	transform: scale(1.05, 1.05);
+	opacity: 0.5;
+}
+
+.picture {
+	/* чтобы отображалось в строчку */
+	display: inline-block;
+
+	/* внутренний отступ внутри коробочки */
+	padding: 20px;
+
+	width: 28%;
+
+	box-sizing: border-box;
+
+	/* задаём скорость анимации */ 
+	transition: all 0.3s;
+}
+	
+.picture:hover{
+	/* transform: scale(1.1, 1.1); */
+}
+
+img {
+	/* задаём ширину, иначе картинки будут большие */
+	width: 100%;
+	border-radius: 0 20px 0 20px;
+}
+
+.mobile {
+	display: none;
+}
+
+/* Стили, которые меняются на мобиле */
+@media (max-width: 800px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	main {
+		width: 90%;
+	}
+
+	.footer {
+		width: 90%;
+	}
+
+	.shadowing {
+		border-radius: 0 10px 0 10px;
+	}
+
+	.picture {
+		width: 30%;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.menu {
+		display: block;
+	}
+
+	.picture {
+		width: 100%;
+	}
+
+	.picture:hover {
+		transform: none;
+		text-align: center;
+	}
+
+	body div:first-child a {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile{
+		display: block;
+	}
+}
