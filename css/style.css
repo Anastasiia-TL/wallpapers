@@ -6,17 +6,6 @@ border-style {
 	background-color: black;
 }
 
-/* h2 {
-	border-bottom: solid 1px #ffffcc; 
-	color: #ffffcc;
-	text-align: left;
-	font-size: 35px;
-	font-family: 'Arial Narrow', 'Arial', sans-serif;
-	font-weight: normal;
-	padding: 20px 20px 10px 30px;
-	margin: 0px;
-} */
-
 h2 {
 	color: black;
 	background: padding-box linear-gradient(to left, black, #ffffcc);
@@ -26,11 +15,12 @@ h2 {
 	font-weight: normal;
 	padding: 7px 20px 7px 30px;
 	margin: 10px 0px 0px 0px;
-	border-radius: 10px 0px 0px 0px;
+	border-radius: 0px 0px 0px 20px;
 }
 
 nav {
 	text-align: center;
+	padding: 20px 0;
 }
 
 main {
@@ -48,26 +38,15 @@ footer {
 	font-family: 'Arial Narrow', 'Arial', sans-serif;
 }
 
-/* .menu a {
-	color: #ffff11;
-	background: padding-box linear-gradient(to top left, crimson, skyblue);
-	text-decoration: none;
-	font-family: sans-serif;
-	font-size: 25px;
-	padding: 5px 15px;
-} */
-
-.menu a {
+nav a {
 	color: #ffffcc;
-	background-color: #bbaa55;
-	border: solid, 5px, #bbbb55;
 	text-decoration: none;
 	font-family: 'Arial Narrow', 'Arial', sans-serif;
 	font-size: 25px;
-	padding: 5px 15px;
+	padding: 5px 25px;
 }
 
-.menu a:hover {
+nav a:hover {
 	color: white;
 }
 
@@ -91,34 +70,9 @@ footer {
 }
 
 /* sections */
-/*  .sakura {
-	background-color: #330000;
-	background: linear-gradient(to top, #990000, #330000);
-}
-
-.architecture {
-	background-color: #002222;
-	background: linear-gradient(to top, #006666, #002222);
-}
-
-.space {
-	background-color: #220022;
-	background: linear-gradient(to top, #660066, #220022);
-}
-
-.mountains {
-	background-color: #000033;
-	background: linear-gradient(to top, #222277, #000033);
-}
-
-.forest {
-	background-color: #003300;
-	background: linear-gradient(to top, #009900, #003300);
-} */
-
 .sakura, .architecture, .space, .mountains, .forest {
 	background-color: #000000;
-	background: linear-gradient(to top, #0f0f44, #000000);
+	background: linear-gradient(to top, #0f0f44, cyan);
 }
 
 .shadowing {
@@ -201,12 +155,14 @@ img {
 @media (max-width: 640px) {
 	.menu {
 		position: fixed;
-		height: 100vh;
+		height: 80vh;
 		width: 300px;
 		padding: 20px;
         box-sizing: border-box;
 		right: -300px;
         transition: all 0.3s;
+        background-color: #555533;
+        opacity: 0.8;
 	}
 
 	.menu a {
