@@ -6,7 +6,7 @@ border-style {
 	background-color: black;
 }
 
-h2 {
+/* h2 {
 	border-bottom: solid 1px #ffffcc; 
 	color: #ffffcc;
 	text-align: left;
@@ -15,6 +15,18 @@ h2 {
 	font-weight: normal;
 	padding: 20px 20px 10px 30px;
 	margin: 0px;
+} */
+
+h2 {
+	color: black;
+	background: padding-box linear-gradient(to left, black, #ffffcc);
+	text-align: left;
+	font-size: 20px;
+	font-family: 'Arial Narrow', 'Arial', sans-serif;
+	font-weight: normal;
+	padding: 7px 20px 7px 30px;
+	margin: 10px 0px 0px 0px;
+	border-radius: 10px 0px 0px 0px;
 }
 
 nav {
@@ -29,18 +41,28 @@ main {
 }
 
 footer {
-	color: #dddd77;
+	color: #bbbb55;
 	width: 80%;
 	text-align: right;
 	padding: 20px 10px;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Arial Narrow', 'Arial', sans-serif;
 }
 
-.menu a {
+/* .menu a {
 	color: #ffff11;
 	background: padding-box linear-gradient(to top left, crimson, skyblue);
 	text-decoration: none;
 	font-family: sans-serif;
+	font-size: 25px;
+	padding: 5px 15px;
+} */
+
+.menu a {
+	color: #ffffcc;
+	background-color: #bbaa55;
+	border: solid, 5px, #bbbb55;
+	text-decoration: none;
+	font-family: 'Arial Narrow', 'Arial', sans-serif;
 	font-size: 25px;
 	padding: 5px 15px;
 }
@@ -49,6 +71,7 @@ footer {
 	color: white;
 }
 
+/* mobile menu */
 .open {
 	display: none;
 }
@@ -67,7 +90,8 @@ footer {
 	display: none;
 }
 
-.sakura {
+/* sections */
+/*  .sakura {
 	background-color: #330000;
 	background: linear-gradient(to top, #990000, #330000);
 }
@@ -90,6 +114,11 @@ footer {
 .forest {
 	background-color: #003300;
 	background: linear-gradient(to top, #009900, #003300);
+} */
+
+.sakura, .architecture, .space, .mountains, .forest {
+	background-color: #000000;
+	background: linear-gradient(to top, #0f0f44, #000000);
 }
 
 .shadowing {
@@ -98,7 +127,7 @@ footer {
 	/* задаём ширину приблизительно треть экрана */
 	width: 100%;
 
-	border-radius: 0 20px 0 20px;
+	border-radius: 0 20px 20px 20px;
 	box-sizing: border-box;
 	transition: all 0.3s;
 	background-color: #dddd77;
@@ -132,7 +161,7 @@ footer {
 img {
 	/* задаём ширину, иначе картинки будут большие */
 	width: 100%;
-	border-radius: 0 20px 0 20px;
+	border-radius: 0 20px 20px 20px;
 }
 
 .mobile {
@@ -142,7 +171,8 @@ img {
 /* Стили, которые меняются на мобиле */
 @media (max-width: 900px) {
 	h2 {
-		font-size: 25px;
+		font-size: 20px;
+		padding: 5px 20px 5px 30px;
 	}
 
 	main {
@@ -155,11 +185,11 @@ img {
 
 	img {
 		width: 100%;
-		border-radius: 0 10px 0 10px;
+		border-radius: 0 10px 10px 10px;
 	}
 
 	.shadowing {
-		border-radius: 0 10px 0 10px;
+		border-radius: 0 10px 10px 10px;
 	}
 
 	.picture {
